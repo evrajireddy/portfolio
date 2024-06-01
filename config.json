@@ -1,0 +1,56 @@
+{
+  "BG_COLOR": "bg-base-300",
+  "skills": [
+    "HTML",
+    "JavaScript",
+    "React.js",
+    "Node.js",
+    "Git",
+    "CSS",
+    "Tailwind"
+  ],
+  "experiences": [
+    {
+      "company": "Company Name",
+      "position": "Position",
+      "from": "September 2021",
+      "to": "Present",
+      "companyLink": "https://example.com"
+    },
+    {
+      "company": "Company Name",
+      "position": "Position",
+      "from": "July 2019",
+      "to": "August 2021",
+      "companyLink": "https://example.com"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Lorem ipsum",
+      "body": "Lorem ipsum dolor sit amet",
+      "year": "March 2022",
+      "link": "https://example.com"
+    }
+  ],
+  "educations": [
+    {
+      "institution": "Institution Name",
+      "degree": "Degree",
+      "from": "2015",
+      "to": "2019"
+    },
+    {
+      "institution": "Institution Name",
+      "degree": "Degree",
+      "from": "2012",
+      "to": "2014"
+    }
+  ],
+  "github": {
+    "userName": "evrajireddy",
+    "projects": {
+      "header": "Github Projects"
+    }
+  }
+}
