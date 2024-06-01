@@ -1,13 +1,12 @@
 import { AiOutlineFork, AiOutlineStar } from 'react-icons/ai';
 import { MdInsertLink } from 'react-icons/md';
 
-const RenderProjects = ({ item, index }) => {
+const RenderProjects = ({ item }) => {
     return (
 
         <a
             className="card shadow-lg compact bg-base-100 cursor-pointer"
             href={item.html_url}
-            key={index}
             onClick={(e) => {
                 e.preventDefault();
                 window?.open(item.html_url, '_blank');
@@ -51,6 +50,9 @@ const RenderProjects = ({ item, index }) => {
 
 function GithubProjects({ projects, userName, header }) {
     return (
+        <div className="lg:col-span-2 col-span-1">
+        <div className="grid grid-cols-1 gap-6">
+
         <div className="col-span-1 lg:col-span-2">
             <div className="grid grid-cols-2 gap-6">
                 <div className="col-span-2">
@@ -80,7 +82,7 @@ function GithubProjects({ projects, userName, header }) {
                                     {console.log(projects)}
                                     {projects && projects.map((item, index) => (
                                         <RenderProjects
-                                            index={index}
+                                            key={index}
                                             item={item} />
                                     ))}
                                 </div>
@@ -89,6 +91,8 @@ function GithubProjects({ projects, userName, header }) {
                     </div>
                 </div>
             </div>
+        </div>
+        </div>
         </div>
     )
 }
