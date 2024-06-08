@@ -1,3 +1,5 @@
+// import config from '../../config.json'
+
 const ListItem = ({ time, degree, institution }) => {
     return (
     <li className="mb-5 ml-4">
@@ -9,9 +11,10 @@ const ListItem = ({ time, degree, institution }) => {
     
     )
 }
+// import ListItem from './ListItem'
 
 function Education({ educations }) {
-    //console.log(educations);
+    console.log("Hi", educations);
     return (
         <div className="card shadow-lg compact bg-base-100">
             <div className="card-body">
@@ -24,14 +27,13 @@ function Education({ educations }) {
                     <ol className="relative border-l border-base-300 border-opacity-30 my-2 mx-4">
                         {console.log("inside the education")}
                         {console.log(educations)}
-                        {educations.map((education, index) => {
+                        {educations.map((education, index) =>
                             <ListItem
                                 key={index}
                                 time={`${education.from} - ${education.to}`}
                                 degree={education.degree}
                                 institution={education.institution}
-                            />
-                        })}
+                            />)}
                     </ol>
                 </div>
             </div>

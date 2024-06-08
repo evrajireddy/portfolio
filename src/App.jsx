@@ -24,7 +24,7 @@ function App() {
         console.log(dataP);
       }).catch(error => console.error('Error: fetching github project details failed:', error));
 
-  });
+  },[]);
 
   return (
     <div className="fade-in w-screen">

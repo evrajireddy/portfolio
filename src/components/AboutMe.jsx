@@ -8,6 +8,8 @@ import GithubProjects from './GitHubProjects'
 import config from '../../config.json'
 
 function AboutMe({ }) {
+
+    console.log(config)
     const [profile, setProfile] = useState({
         avatar: '',
         name: '',
