@@ -13,7 +13,7 @@ import Books from './components/Books'
 
 function App() {
   const [githubProjects, setGithubProjects] = useState([]);
-
+// using useEffect function
   useEffect(() => {
     fetch(`https://api.github.com/search/repositories?q=user:${config.github.userName}&sort=stars&per_page=100&type=Repositories`)
       .then(responseP => responseP.json())
